@@ -1,0 +1,93 @@
+//
+//  PrefixHeader.pch
+//  BasicProject
+//
+//  Created by chenc on 16/6/24.
+//  Copyright © 2016年 cc. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "Constant.h"
+#import "Tools.h"
+
+#import "DataPath.h"
+#import <PSCollectionView.h>
+#import <MWPhotoBrowser.h>
+
+#import <YYKit.h>
+
+//分类方面
+#import "NSObject+ParseJSON.h"
+//#import "NSObject+ParseMJExtention.h"
+#import "NSObject+Networking.h"
+#import "UIScrollView+Refresh.h"
+#import "NSString+Custom.h"
+#import "AppDelegate+appDelegateCategory.h"
+#import "UIView+HUD.h"
+
+//网络方面
+#import <AFNetworking.h>
+#import <UIKit+AFNetworking.h> //对UIKit类添加类拓展，让诸如UIButton, UIImageView等拥有了网络加载图片的功能
+//刷新方面
+#import <MJRefresh.h>
+//页面提示刷新功能
+#import <MBProgressHUD.h>
+#import <SVProgressHUD.h>
+
+// 数据库
+//#import <FMDB.h>
+
+
+//方法触发方面
+/* 改变系统的target+selector模式为 block模式。 带来紧凑的代码风格，高效率的回调执行 */
+#import <BlocksKit.h>
+#import <BlocksKit+UIKit.h>
+#import <BlocksKit+MessageUI.h>
+
+#import "EMSDK.h"
+//登录方面
+#import <BmobSDK/Bmob.h>
+
+
+//布局方面
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+#import <UITableView+FDTemplateLayoutCell.h>
+
+
+#import <iCarousel.h>
+
+#import <WMPageConst.h>
+#import <WMProgressView.h>
+#import <WMPageController.h>
+
+//图片处理方面
+#import <SDImageCache.h>
+#import <UIImageView+WebCache.h> //SDWebImage
+#import <UIImageView+AFNetworking.h>//没有用过
+#import <UIImageView+HighlightedWebCache.h>//没有用过
+
+//界面滑动方面
+#import <MLTransition.h>
+
+//归档
+#import <MJExtension.h>
+
+//打印错误
+#import <CocoaLumberjack.h> //优秀的替换NSLog的第三方，更加省资源，并且可以定义打印级别
+#ifdef DEBUG
+static const int ddLogLevel = DDLogLevelVerbose;
+#else
+static const int ddLogLevel = DDLogLevelError;
+#endif
+
+#import <RESideMenu.h> //QQ左侧抽屉菜单栏风格
+#import <MWPhotoBrowser.h> // 图片浏览器
+#import <GCDAsyncSocket.h> // 第三方socket通讯类库,对系统CFNetwork类库进行了封装.
+
+#endif /* PrefixHeader_pch */
